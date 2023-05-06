@@ -1,13 +1,14 @@
 {
 	"pack": {
-		"name": "Origins Minus",
-		"id": "origins_minus",
-		"pack_format": 9,
+		"name": "Origins Squared",
+		"id": "origins_squared",
+		"pack_format": 12,
 		"authors": [
 			"Sisby folk",
 			"Garden System",
-			"DansOtherClone"
+			"DansOtherClone",
+			"DiffuseHyperion"
 		],
-		"description": "An Origins replacer prioritising simplicity over balance."
+		"description": "A fork of Origins Minus, for private use."
 	}
 }

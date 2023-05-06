@@ -1,0 +1,78 @@
+{
+  "name":"Double Jump",
+  "description": "Jump again in mid air.",
+  "type": "origins:multiple",
+  "badges": [
+    {
+      "sprite": "origins:textures/gui/badge/info.png",
+      "text": "Double jump immediately to do a high jump."
+    }
+  ],
+
+  "resource": {
+    "type": "origins:resource",
+    "min": 0,
+    "max": 1,
+    "hud_render": {
+      "should_render": true,
+      "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_03.png",
+      "bar_index": 16
+    }
+  },
+
+  "charge": {
+    "type": "origins:action_on_land",
+    "entity_action": {
+      "type": "origins:change_resource",
+      "resource": "origins_squared:double_jump_resource",
+      "change": 1,
+      "operation": "set"
+    }
+  },
+
+  "discharge": {
+    "type": "origins:active_self",
+    "condition": {
+      "type": "origins:and",
+      "conditions": [
+        {
+          "type": "origins:on_block",
+          "inverted": true
+        },
+        {
+          "type": "origins:resource",
+          "resource": "origins_squared:double_jump_resource",
+          "comparison": "==",
+          "compare_to": 1
+        }
+      ]
+    },
+    "entity_action": {
+      "type": "origins:and",
+      "actions": [
+        {
+          "type": "origins:add_velocity",
+          "y": 1,
+          "space": "world",
+          "client": true,
+          "server": false
+        },
+        {
+          "type": "origins:play_sound",
+          "sound": "entity.phantom.flap",
+          "volume": 0.5,
+          "pitch": 1.4
+        },
+        {
+          "type": "origins:change_resource",
+          "resource": "origins_squared:double_jump_resource",
+          "change": 0,
+          "operation": "set"
+        }
+      ]
+    },
+    "key": {
+      "key": "key.jump"
+    }
+  }
+}

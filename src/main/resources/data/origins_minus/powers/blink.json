@@ -46,7 +46,7 @@
 			}
 		]
 	},
-	"cooldown": 450,
+	"cooldown": 300,
 	"hud_render": {
 		"should_render": true,
 		"inverted": true,

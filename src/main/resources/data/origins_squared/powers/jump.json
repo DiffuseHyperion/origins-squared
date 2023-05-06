@@ -1,0 +1,30 @@
+{
+  "name": "Light Body",
+  "description": "Jump higher and take less fall damage.",
+  "type": "origins:multiple",
+
+  "jump": {
+    "type": "origins:modify_jump",
+    "modifier": {
+      "operation": "addition",
+      "value": 0.2
+    },
+    "entity_action": {
+      "type": "origins:execute_command",
+      "command": "particle cloud ~ ~ ~ 0.3 0.3 0.3 0.01 16 normal @a"
+    }
+  },
+
+  "fall": {
+    "type": "origins:modify_damage_taken",
+    "damage_condition": {
+      "inverted": false,
+      "type": "origins:name",
+      "name": "fall"
+    },
+    "modifier": {
+      "operation": "add_base_late",
+      "value": -4
+    }
+  }
+}

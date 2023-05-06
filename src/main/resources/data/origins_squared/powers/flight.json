@@ -1,0 +1,54 @@
+{
+  "name": "Flight",
+  "description": "Fly for a short distance.",
+  "type": "origins:multiple",
+
+  "flight": {
+    "type": "origins:elytra_flight",
+    "render_elytra": false,
+    "condition": {
+      "type": "origins:resource",
+      "resource": "origins_squared:flight_charge",
+      "comparison": ">",
+      "compare_to": 0
+    }
+  },
+
+  "charge": {
+    "type": "origins:resource",
+    "min": 0,
+    "max": 100,
+    "hud_render": {
+      "should_render": true,
+      "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_03.png",
+      "bar_index": 22
+    }
+  },
+
+  "charge-regen": {
+    "type": "origins:action_over_time",
+    "entity_action": {
+      "type": "origins:change_resource",
+      "resource": "origins_squared:flight_charge",
+      "change": 1
+    },
+    "interval": 1,
+    "condition": {
+      "type": "origins:fall_flying",
+      "inverted": true
+    }
+  },
+
+  "drain-regen": {
+    "type": "origins:action_over_time",
+    "entity_action": {
+      "type": "origins:change_resource",
+      "resource": "origins_squared:flight_charge",
+      "change": -1
+    },
+    "interval": 1,
+    "condition": {
+      "type": "origins:fall_flying"
+    }
+  }
+}

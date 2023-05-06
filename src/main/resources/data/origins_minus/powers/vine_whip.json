@@ -29,7 +29,7 @@
 		"actions": [
 			{
 				"type": "origins:raycast",
-				"distance": 16,
+				"distance": 24,
 				"block": true,
 				"entity": false,
 				"shape_type": "outline",
@@ -80,7 +80,7 @@
 			}
 		]
 	},
-	"cooldown": 40,
+	"cooldown": 100,
 	"hud_render": {
 		"should_render": true,
 		"inverted": true,

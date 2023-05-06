@@ -2,9 +2,10 @@
 	"name": "Avian",
 	"description": "Freedom in the sky.",
 	"powers": [
-		"origins_minus:flap",
+		"origins_squared:double_jump",
 		"origins_minus:glide",
-		"origins_minus:like_air"
+		"origins_minus:like_air",
+		"origins_squared:jump"
 	],
 	"icon": {
 		"item": "minecraft:feather"

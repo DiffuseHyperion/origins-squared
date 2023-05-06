@@ -23,7 +23,7 @@ if (System.getenv("GITHUB_TOKEN")) {
 archivesBaseName = project.archives_base_name
 
 def mc_major = '1.19'
-def mc = mc_major + '.2'
+def mc = mc_major + '.3'
 def default_branch = 'main'
 
 def origVersion = project.version
@@ -128,19 +128,19 @@ publishing {
 if (System.getenv("MODRINTH_TOKEN")) {
 	modrinth {
 		token = System.getenv("MODRINTH_TOKEN")
-		projectId = 'origins-minus'
+		projectId = 'origins-squared'
 		versionNumber = project.version
 		versionName = origVersion
 		versionType = 'release'
 		uploadFile = remapJar
-		gameVersions = ['1.18.2', '1.19', '1.19.1', '1.19.2']
+		gameVersions = ['1.18.2', '1.19', '1.19.1', '1.19.2', '1.19.3']
 		loaders = ['quilt', 'fabric']
 		detectLoaders = false
 		dependencies {
 			required.project "origins"
 			required.project "pehkui"
 		}
-		changelog = "Changelog: https://github.com/sisby-folk/origins-minus/releases/tag/v" + origVersion
+		changelog = "Changelog: https://github.com/DiffuseHyperion/origins-squared/releases/tag/v" + origVersion
 		syncBodyFrom = rootProject.file("README.md").text
 	}
 }
@@ -148,8 +148,8 @@ if (System.getenv("MODRINTH_TOKEN")) {
 if (System.getenv("GITHUB_TOKEN")) {
 	githubRelease {
 		token System.getenv("GITHUB_TOKEN")
-		owner "sisby-folk"
-		repo "origins-minus"
+		owner "DiffuseHyperion"
+		repo "origins-squared"
 		tagName 'v' + origVersion
 		releaseName origVersion
 		targetCommitish default_branch

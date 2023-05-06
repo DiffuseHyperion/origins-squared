@@ -1,21 +1,22 @@
 {
 	"schema_version": 1,
 	"quilt_loader": {
-		"group": "folk.sisby",
-		"id": "origins-minus",
+		"group": "me.diffusehyperion",
+		"id": "origins-squared",
 		"version": "${version}",
 		"metadata": {
-			"name": "Origins Minus",
-			"description": "Simple origins with less to remember.",
+			"name": "Origins Squared",
+			"description": "A fork of Origins Minus, for private use.",
 			"contributors": {
 				"Sisby folk": "Co-Authors",
 				"Garden System": "Contributor/s",
-				"DansOtherClone": "Contributor/s"
+				"DansOtherClone": "Contributor/s",
+				"DiffuseHyperion": "Contributor/s"
 			},
 			"contact": {
-				"homepage": "https://modrinth.com/mod/origins-minus",
-				"issues": "https://github.com/sisby-folk/origins-minus/issues",
-				"sources": "https://github.com/sisby-folk/origins-minus"
+				"homepage": "https://modrinth.com/mod/origins-squared",
+				"issues": "https://github.com/DiffuseHyperion/origins-squared/issues",
+				"sources": "https://github.com/DiffuseHyperion/origins-squared"
 			},
 			"icon": "assets/origins_minus/icon.png"
 		},
@@ -27,14 +28,15 @@
 			},
 			{
 				"id": "minecraft",
-				"versions": ">=1.15"
+				"versions": ">=1.19.3"
 			},
 			{
 				"id": "origins",
-				"versions": ">=1.4"
+				"versions": ">=1.8.0"
 			},
 			{
-				"id": "pehkui"
+				"id": "pehkui",
+				"versions": ">=3.6.1"
 			}
 		]
 	}

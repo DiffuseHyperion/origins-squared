@@ -1,28 +1,29 @@
 {
 	"schemaVersion": 1,
-	"id": "origins-minus",
+	"id": "origins-squared",
 	"version": "${version}",
-	"name": "Origins Minus",
-	"description": "Simple origins with less to remember.",
+	"name": "Origins Squared",
+	"description": "A fork of Origins Minus, for private use.",
 	"authors": [
 		"Sisby folk",
 		"Garden System",
-		"DansOtherClone"
+		"DansOtherClone",
+		"DiffuseHyperion"
 	],
 	"contact": {
-		"homepage": "https://modrinth.com/mod/origins-minus",
-		"issues": "https://github.com/sisby-folk/origins-minus/issues",
-		"sources": "https://github.com/sisby-folk/origins-minus"
+		"homepage": "https://modrinth.com/mod/origins-squared",
+		"issues": "https://github.com/DiffuseHyperion/origins-squared/issues",
+		"sources": "https://github.com/DiffuseHyperion/origins-squared"
 	},
 	"license": "LGPL-3.0-only",
 	"icon": "assets/origins_minus/icon.png",
 	"environment": "*",
 	"depends": {
 		"fabricloader": ">=0.14.9",
-		"minecraft": ">=1.15",
+		"minecraft": ">=1.19.3",
 		"java": ">=17",
-		"origins": ">=1.4",
-		"pehkui": "*"
+		"origins": ">=1.8.0",
+		"pehkui": ">=3.6.1"
 	},
 	"suggests": {
 	}

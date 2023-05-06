@@ -1,0 +1,35 @@
+{
+	"name": "Super Jump",
+	"description": "Charge a high jump.",
+	"badges": [
+		{
+			"type": "origins:keybind",
+			"sprite": "origins:textures/gui/badge/active.png",
+			"text": "Active ability, use by holding %s."
+		}
+	],
+
+	"type": "origins:launch",
+	"sound": "minecraft:entity.parrot.fly",
+	"speed": 999,
+	"key": {
+		"key": "key.jump"
+	},
+	"cooldown": 30,
+	"hud_render": {
+		"sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_03.png",
+		"bar_index": 16
+	},
+	"condition": {
+		"type": "origins:and",
+		"conditions": [
+			{
+				"type": "origins:on_block"
+			},
+			{
+				"type": "origins:fall_flying",
+				"inverted": true
+			}
+		]
+	}
+}
