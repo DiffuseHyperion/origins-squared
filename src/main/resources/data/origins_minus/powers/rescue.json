@@ -9,7 +9,7 @@
 			"actions": [
 				{
 					"type": "origins:raycast",
-					"distance": 20,
+					"distance": 30,
 					"block": false,
 					"entity": true,
 					"fluid_handling": "none",
@@ -88,7 +88,7 @@
 				}
 			]
 		},
-		"cooldown": 40,
+		"cooldown": 100,
 		"hud_render": {
 			"should_render": true,
 			"inverted": true,

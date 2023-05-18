@@ -15,7 +15,7 @@
 	"res": {
 		"type": "origins:resource",
 		"min": 0,
-		"max": 100,
+		"max": 115,
 		"start_value": 25,
 		"hud_render": {
 			"should_render": true,
@@ -45,7 +45,7 @@
 				{
 					"type": "origins:change_resource",
 					"resource": "*:*_res",
-					"change": 25
+					"change": 30
 				}
 			]
 		}
